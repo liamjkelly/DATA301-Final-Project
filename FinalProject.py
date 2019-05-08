@@ -4,6 +4,7 @@
 !pip install -q pyspark
 
 import pyspark
+import gdelt
 from pyspark import SparkConf, SparkContext
 conf = SparkConf().setMaster("local[*]").set("spark.executor.memory", "1g")
 sc = SparkContext(conf = conf)
